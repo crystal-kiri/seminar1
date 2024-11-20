@@ -1,0 +1,164 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #004d77, #2f96a0);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.date-badge {
+    background-color: #ff8c00;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.registration-btn {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.registration-btn:hover {
+    background-color: #d76d00;
+}
+
+/* Section styling */
+.section {
+    padding: 50px 20px;
+    background: white;
+    margin-top: 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 30px;
+    color: #004d77;
+    margin-bottom: 20px;
+}
+
+.benefit-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.benefit-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Schedule */
+.schedule-item {
+    margin-bottom: 20px;
+}
+
+.schedule-item .time {
+    font-weight: bold;
+    color: #004d77;
+}
+
+.schedule-item .content {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Buttons */
+.registration-btn.red {
+    background-color: #ff4d4d;
+}
+
+.registration-btn.red:hover {
+    background-color: #e03e3e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-item .time {
+        font-size: 16px;
+    }
+
+    .schedule-item .content {
+        font-size: 14px;
+    }
+}
